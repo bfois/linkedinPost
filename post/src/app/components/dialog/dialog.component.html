@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Crear una publicación</h1>
+<mat-dialog-content>
+  <div class="perfil1"> <img class="imagen" src="../../../assets/perfil.jpg" alt="perfil" width="100px"></div>
+  <div class="namePerson">
+      <span>Brian Fois</span>
+      <button class="restriccion" mat-button [matMenuTriggerFor]="menu"><img src="../../../assets/mundo.svg" alt="mundo">Cualquiera</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item></button>
+</mat-menu>
+   </div>
+   <p>Crear Publicacion</p>
+
+    <input type="text" [formControl]="inputForm">
+
+</mat-dialog-content>
+<div mat-dialog-actions>
+  <button mat-button (click)="onSaveClick()">Guardar</button>
+  <button mat-button (click)="onCancelClick()">Cancelar</button>
+</div>
